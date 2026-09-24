@@ -6,7 +6,7 @@ The application follows:
 
 **Raw Data → Data Cleaning → KPI Calculation → Descriptive Analytics → Diagnostic Analytics → Predictive Analytics → Prescriptive Analytics → Business Insights**
 
-The main application is implemented in [`project.py`](project.py).
+The main application is implemented in [`SiddhiBhavsar_OnlineRetailBI.py`](SiddhiBhavsar_OnlineRetailBI.py).
 
 ## 📌 Project Overview
 
@@ -170,7 +170,7 @@ The sidebar also supports uploading an alternative Excel dataset.
 ```text
 IBM_Siddhi_Online_Retail_Project/
 │
-├── project.py
+├── SiddhiBhavsar_OnlineRetailBI.py
 ├── Online Retail.xlsx
 ├── requirements.txt
 ├── README.md
@@ -185,7 +185,7 @@ IBM_Siddhi_Online_Retail_Project/
 
 | File | Description |
 |---|---|
-| `project.py` | Main Streamlit application and analytics pipeline |
+| `SiddhiBhavsar_OnlineRetailBI.py` | Main Streamlit application and analytics pipeline |
 | `Online Retail.xlsx` | Input retail transaction dataset |
 | `requirements.txt` | Python dependencies |
 | `README.md` | Project documentation |
@@ -303,7 +303,7 @@ pip install -r requirements.txt
 ## ▶️ Run the Application
 
 ```bash
-streamlit run project.py
+streamlit run SiddhiBhavsar_OnlineRetailBI.py
 ```
 
 Then open:

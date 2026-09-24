@@ -436,7 +436,7 @@ def save_outputs(sales, monthly, product, country, forecast):
 # STREAMLIT APPLICATION
 # ============================================================
 
-st.title("📊 Online Retail Business Intelligence & Analytics")
+st.title(" Online Retail Business Intelligence & Analytics")
 st.caption(
     "End-to-end project: Raw Data → Cleaning → Descriptive → Diagnostic → "
     "Predictive → Prescriptive Analytics → Business Action"
@@ -454,7 +454,7 @@ file_to_use = uploaded_file if uploaded_file is not None else DATA_FILE
 if uploaded_file is None and not os.path.exists(DATA_FILE):
     st.error(
         f"'{DATA_FILE}' was not found. Download the official UCI Online Retail.xlsx "
-        "file and place it in the same folder as project.py."
+        "file and place it in the same folder as SiddhiBhavsar_OnlineRetailBI.py."
     )
     st.stop()
 
