@@ -40,62 +40,6 @@ online-retail-data-analysis/
     └── revenue_forecast.csv
 ```
 
-Do not commit large raw datasets if your repository policy/limits make that undesirable. The dashboard also supports uploading the Excel file through the sidebar.
-
-## Local setup
-
-```bash
-python -m venv .venv
-```
-
-Windows PowerShell:
-
-```powershell
-.venv\Scripts\Activate.ps1
-```
-
-Install packages:
-
-```bash
-python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
-```
-
-Run:
-
-```bash
-python -m streamlit run project.py
-```
-
-## Google Colab
-
-Upload `Online Retail.xlsx`, then install:
-
-```python
-!pip install pandas numpy openpyxl plotly streamlit scikit-learn
-```
-
-The main dashboard is intended to run with Streamlit. For notebook analysis, the same `project.py` contains reusable functions for loading, cleaning, KPI calculation, diagnostics and forecasting.
-
-## GitHub
-
-```bash
-git init
-git add project.py requirements.txt README.md
-git commit -m "Add end-to-end online retail analytics project"
-git branch -M main
-git remote add origin YOUR_GITHUB_REPOSITORY_URL
-git push -u origin main
-```
-
-If you decide to include the raw Excel file:
-
-```bash
-git add "Online Retail.xlsx"
-git commit -m "Add source dataset"
-git push
-```
-
 ## Analytics flow
 
 Data → Cleaning → KPIs → Descriptive → Diagnostic → Predictive → Prescriptive → Action
